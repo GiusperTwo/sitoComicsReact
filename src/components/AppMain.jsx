@@ -160,7 +160,7 @@ function AppMain() {
   
     const images = comics.map((product) => {
         return (
-          <AppComic id={product.id} image={product.thumb} title={product.title} series={product.series}/>
+          <AppComic id={product.id} image={product.thumb} title={product.title} nome={product.series}/>
         )
     })
     

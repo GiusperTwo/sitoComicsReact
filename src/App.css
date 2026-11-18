@@ -53,6 +53,11 @@
   text-transform: uppercase;
 }
 
+.rosso {
+  color: red;
+  text-transform: lowercase;
+}
+
 .comic-thumb {
   display: block;
   width: 100%;

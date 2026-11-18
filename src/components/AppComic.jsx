@@ -1,8 +1,15 @@
+import {useState} from "react"
+
 function AppCard(prop) {
+    const [rosso, setRosso] = useState(false)
+
+
     return (
-        <div className="comic-card">
+        <div className="comic-card" onClick={() => setRosso(!rosso)}>
             <img className="comic-thumb" src={prop.image} alt={prop.titolo} />
-            <p>{prop.nome}</p>
+            <p className={rosso ? "rosso" : ""} >
+                {prop.nome}
+            </p>
           </div>
     )
 }
